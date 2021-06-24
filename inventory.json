@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/6aad3670-edb0-4471-9598-5a6ac1720a67.dot",
+        "dotFile": "output/7c299325-08bd-412b-8436-b88d39e87f75.dot",
         "title": "",
         "provider": [
             "google"
@@ -17,8 +17,8 @@
     },
     "programOptions": {
         "infra": "iac_google.js",
-        "json": "output/gc-list-6aad3670-edb0-4471-9598-5a6ac1720a67.json",
-        "config": "input/config-6aad3670-edb0-4471-9598-5a6ac1720a67.js"
+        "json": "output/gc-list-7c299325-08bd-412b-8436-b88d39e87f75.json",
+        "config": "input/config-7c299325-08bd-412b-8436-b88d39e87f75.js"
     },
     "result": {
         "error": false,
@@ -30,10 +30,73 @@
                 "results": [
                     {
                         "type": "Network",
-                        "resources": []
+                        "resources": [
+                            {
+                                "uri": "google::Network::7258773012956681426",
+                                "name": "rhmig",
+                                "displayName": "rhmig",
+                                "id": "7258773012956681426",
+                                "providerName": "google",
+                                "type": "Network",
+                                "live": {
+                                    "id": "7258773012956681426",
+                                    "creationTimestamp": "2021-06-23T23:46:21.146-07:00",
+                                    "name": "rhmig",
+                                    "description": "Managed By GruCloud",
+                                    "selfLink": "https://www.googleapis.com/compute/v1/projects/grucloud-test/global/networks/rhmig",
+                                    "autoCreateSubnetworks": false,
+                                    "routingConfig": {
+                                        "routingMode": "REGIONAL"
+                                    },
+                                    "kind": "compute#network"
+                                },
+                                "cannotBeDeleted": false,
+                                "isDefault": false,
+                                "namespace": "",
+                                "dependencies": [],
+                                "managedByUs": true,
+                                "show": true
+                            }
+                        ]
                     },
                     {
-                        "type": "SubNetwork",
+                        "type": "Disk",
+                        "resources": [
+                            {
+                                "uri": "google::Disk::2758807692422780115",
+                                "name": "extra-disk",
+                                "displayName": "extra-disk",
+                                "id": "2758807692422780115",
+                                "providerName": "google",
+                                "type": "Disk",
+                                "live": {
+                                    "id": "2758807692422780115",
+                                    "creationTimestamp": "2021-06-23T23:46:21.020-07:00",
+                                    "name": "extra-disk",
+                                    "sizeGb": "500",
+                                    "zone": "https://www.googleapis.com/compute/v1/projects/grucloud-test/zones/europe-west4-a",
+                                    "status": "READY",
+                                    "selfLink": "https://www.googleapis.com/compute/v1/projects/grucloud-test/zones/europe-west4-a/disks/extra-disk",
+                                    "type": "https://www.googleapis.com/compute/v1/projects/grucloud-test/zones/europe-west4-a/diskTypes/pd-standard",
+                                    "labels": {
+                                        "managed-by": "grucloud",
+                                        "stage": "dev"
+                                    },
+                                    "labelFingerprint": "2XCNew8FA10=",
+                                    "physicalBlockSizeBytes": "4096",
+                                    "kind": "compute#disk"
+                                },
+                                "cannotBeDeleted": false,
+                                "isDefault": false,
+                                "namespace": "",
+                                "dependencies": [],
+                                "managedByUs": true,
+                                "show": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "IamBinding",
                         "resources": []
                     },
                     {
@@ -41,8 +104,46 @@
                         "resources": []
                     },
                     {
-                        "type": "IamBinding",
-                        "resources": []
+                        "type": "SubNetwork",
+                        "resources": [
+                            {
+                                "uri": "google::SubNetwork::1527258530765706428",
+                                "name": "subnet-10-0-0-0-16",
+                                "displayName": "subnet-10-0-0-0-16",
+                                "id": "1527258530765706428",
+                                "providerName": "google",
+                                "type": "SubNetwork",
+                                "live": {
+                                    "id": "1527258530765706428",
+                                    "creationTimestamp": "2021-06-23T23:46:43.842-07:00",
+                                    "name": "subnet-10-0-0-0-16",
+                                    "description": "Managed By GruCloud",
+                                    "network": "https://www.googleapis.com/compute/v1/projects/grucloud-test/global/networks/rhmig",
+                                    "ipCidrRange": "10.0.0.0/16",
+                                    "gatewayAddress": "10.0.0.1",
+                                    "region": "https://www.googleapis.com/compute/v1/projects/grucloud-test/regions/europe-west4",
+                                    "selfLink": "https://www.googleapis.com/compute/v1/projects/grucloud-test/regions/europe-west4/subnetworks/subnet-10-0-0-0-16",
+                                    "privateIpGoogleAccess": false,
+                                    "fingerprint": "7ETM2MhEnxA=",
+                                    "privateIpv6GoogleAccess": "DISABLE_GOOGLE_ACCESS",
+                                    "purpose": "PRIVATE",
+                                    "kind": "compute#subnetwork"
+                                },
+                                "cannotBeDeleted": false,
+                                "isDefault": false,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Network",
+                                        "ids": [
+                                            "7258773012956681426"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": true,
+                                "show": true
+                            }
+                        ]
                     },
                     {
                         "type": "ServiceAccount",
