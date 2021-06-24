@@ -1,19 +1,24 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/e542a4e6-25af-4985-87bc-f2c23b7ce2b6.dot",
+        "dotFile": "output/6746d08d-2193-43f1-b718-78aae3e7311e.dot",
         "title": "",
         "provider": [
             "google"
         ],
         "all": true,
         "graph": true,
-        "defaultExclude": true
+        "defaultExclude": true,
+        "typesExclude": [
+            "IamBinding",
+            "IamPolicy",
+            "ServiceAccount"
+        ]
     },
     "programOptions": {
         "infra": "iac_google.js",
-        "json": "output/gc-list-e542a4e6-25af-4985-87bc-f2c23b7ce2b6.json",
-        "config": "input/config-e542a4e6-25af-4985-87bc-f2c23b7ce2b6.js"
+        "json": "output/gc-list-6746d08d-2193-43f1-b718-78aae3e7311e.json",
+        "config": "input/config-6746d08d-2193-43f1-b718-78aae3e7311e.js"
     },
     "result": {
         "error": false,
@@ -190,342 +195,16 @@
                         ]
                     },
                     {
-                        "type": "IamBinding",
-                        "resources": [
-                            {
-                                "uri": "google::IamBinding::roles/compute.admin",
-                                "name": "roles/compute.admin",
-                                "displayName": "roles/compute.admin",
-                                "id": "roles/compute.admin",
-                                "providerName": "google",
-                                "type": "IamBinding",
-                                "live": {
-                                    "role": "roles/compute.admin",
-                                    "members": [
-                                        "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                    ]
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "show": true
-                            },
-                            {
-                                "uri": "google::IamBinding::roles/compute.serviceAgent",
-                                "name": "roles/compute.serviceAgent",
-                                "displayName": "roles/compute.serviceAgent",
-                                "id": "roles/compute.serviceAgent",
-                                "providerName": "google",
-                                "type": "IamBinding",
-                                "live": {
-                                    "role": "roles/compute.serviceAgent",
-                                    "members": [
-                                        "serviceAccount:service-91170824493@compute-system.iam.gserviceaccount.com"
-                                    ]
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "show": true
-                            },
-                            {
-                                "uri": "google::IamBinding::roles/compute.viewer",
-                                "name": "roles/compute.viewer",
-                                "displayName": "roles/compute.viewer",
-                                "id": "roles/compute.viewer",
-                                "providerName": "google",
-                                "type": "IamBinding",
-                                "live": {
-                                    "role": "roles/compute.viewer",
-                                    "members": [
-                                        "serviceAccount:sa-grucloud@grucloud-test.iam.gserviceaccount.com"
-                                    ]
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "show": true
-                            },
-                            {
-                                "uri": "google::IamBinding::roles/dns.admin",
-                                "name": "roles/dns.admin",
-                                "displayName": "roles/dns.admin",
-                                "id": "roles/dns.admin",
-                                "providerName": "google",
-                                "type": "IamBinding",
-                                "live": {
-                                    "role": "roles/dns.admin",
-                                    "members": [
-                                        "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                    ]
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "show": true
-                            },
-                            {
-                                "uri": "google::IamBinding::roles/iam.serviceAccountAdmin",
-                                "name": "roles/iam.serviceAccountAdmin",
-                                "displayName": "roles/iam.serviceAccountAdmin",
-                                "id": "roles/iam.serviceAccountAdmin",
-                                "providerName": "google",
-                                "type": "IamBinding",
-                                "live": {
-                                    "role": "roles/iam.serviceAccountAdmin",
-                                    "members": [
-                                        "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                    ]
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "show": true
-                            },
-                            {
-                                "uri": "google::IamBinding::roles/owner",
-                                "name": "roles/owner",
-                                "displayName": "roles/owner",
-                                "id": "roles/owner",
-                                "providerName": "google",
-                                "type": "IamBinding",
-                                "live": {
-                                    "role": "roles/owner",
-                                    "members": [
-                                        "user:fred@grucloud.com"
-                                    ]
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "show": true
-                            },
-                            {
-                                "uri": "google::IamBinding::roles/resourcemanager.projectIamAdmin",
-                                "name": "roles/resourcemanager.projectIamAdmin",
-                                "displayName": "roles/resourcemanager.projectIamAdmin",
-                                "id": "roles/resourcemanager.projectIamAdmin",
-                                "providerName": "google",
-                                "type": "IamBinding",
-                                "live": {
-                                    "role": "roles/resourcemanager.projectIamAdmin",
-                                    "members": [
-                                        "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                    ]
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "show": true
-                            },
-                            {
-                                "uri": "google::IamBinding::roles/storage.admin",
-                                "name": "roles/storage.admin",
-                                "displayName": "roles/storage.admin",
-                                "id": "roles/storage.admin",
-                                "providerName": "google",
-                                "type": "IamBinding",
-                                "live": {
-                                    "role": "roles/storage.admin",
-                                    "members": [
-                                        "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                    ]
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "show": true
-                            },
-                            {
-                                "uri": "google::IamBinding::roles/storage.objectAdmin",
-                                "name": "roles/storage.objectAdmin",
-                                "displayName": "roles/storage.objectAdmin",
-                                "id": "roles/storage.objectAdmin",
-                                "providerName": "google",
-                                "type": "IamBinding",
-                                "live": {
-                                    "role": "roles/storage.objectAdmin",
-                                    "members": [
-                                        "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                    ]
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "show": true
-                            }
-                        ]
+                        "type": "IamPolicy",
+                        "resources": []
                     },
                     {
-                        "type": "IamPolicy",
-                        "resources": [
-                            {
-                                "uri": "google::IamPolicy::policy",
-                                "name": "policy",
-                                "displayName": "policy",
-                                "id": "policy",
-                                "providerName": "google",
-                                "type": "IamPolicy",
-                                "live": {
-                                    "version": 1,
-                                    "etag": "BwXFITfT+ZQ=",
-                                    "bindings": [
-                                        {
-                                            "role": "roles/compute.admin",
-                                            "members": [
-                                                "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                            ]
-                                        },
-                                        {
-                                            "role": "roles/compute.serviceAgent",
-                                            "members": [
-                                                "serviceAccount:service-91170824493@compute-system.iam.gserviceaccount.com"
-                                            ]
-                                        },
-                                        {
-                                            "role": "roles/compute.viewer",
-                                            "members": [
-                                                "serviceAccount:sa-grucloud@grucloud-test.iam.gserviceaccount.com"
-                                            ]
-                                        },
-                                        {
-                                            "role": "roles/dns.admin",
-                                            "members": [
-                                                "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                            ]
-                                        },
-                                        {
-                                            "role": "roles/iam.serviceAccountAdmin",
-                                            "members": [
-                                                "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                            ]
-                                        },
-                                        {
-                                            "role": "roles/owner",
-                                            "members": [
-                                                "user:fred@grucloud.com"
-                                            ]
-                                        },
-                                        {
-                                            "role": "roles/resourcemanager.projectIamAdmin",
-                                            "members": [
-                                                "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                            ]
-                                        },
-                                        {
-                                            "role": "roles/storage.admin",
-                                            "members": [
-                                                "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                            ]
-                                        },
-                                        {
-                                            "role": "roles/storage.objectAdmin",
-                                            "members": [
-                                                "serviceAccount:grucloud@grucloud-test.iam.gserviceaccount.com"
-                                            ]
-                                        }
-                                    ]
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "managedByUs": true,
-                                "show": true
-                            }
-                        ]
+                        "type": "IamBinding",
+                        "resources": []
                     },
                     {
                         "type": "ServiceAccount",
-                        "resources": [
-                            {
-                                "uri": "google::ServiceAccount::112950954233185370823",
-                                "name": "grucloud",
-                                "displayName": "grucloud",
-                                "id": "112950954233185370823",
-                                "providerName": "google",
-                                "type": "ServiceAccount",
-                                "live": {
-                                    "name": "projects/grucloud-test/serviceAccounts/grucloud@grucloud-test.iam.gserviceaccount.com",
-                                    "projectId": "grucloud-test",
-                                    "uniqueId": "112950954233185370823",
-                                    "email": "grucloud@grucloud-test.iam.gserviceaccount.com",
-                                    "displayName": "grucloud service account",
-                                    "etag": "MDEwMjE5MjA=",
-                                    "oauth2ClientId": "112950954233185370823",
-                                    "iamPolicy": {
-                                        "etag": "ACAB"
-                                    }
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "managedByUs": false,
-                                "show": true
-                            },
-                            {
-                                "uri": "google::ServiceAccount::116099554802634020507",
-                                "name": "91170824493-compute",
-                                "displayName": "91170824493-compute",
-                                "id": "116099554802634020507",
-                                "providerName": "google",
-                                "type": "ServiceAccount",
-                                "live": {
-                                    "name": "projects/grucloud-test/serviceAccounts/91170824493-compute@developer.gserviceaccount.com",
-                                    "projectId": "grucloud-test",
-                                    "uniqueId": "116099554802634020507",
-                                    "email": "91170824493-compute@developer.gserviceaccount.com",
-                                    "displayName": "Compute Engine default service account",
-                                    "etag": "MDEwMjE5MjA=",
-                                    "oauth2ClientId": "116099554802634020507",
-                                    "iamPolicy": {
-                                        "etag": "ACAB"
-                                    }
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "managedByUs": false,
-                                "show": true
-                            },
-                            {
-                                "uri": "google::ServiceAccount::105908581481869541232",
-                                "name": "sa-grucloud",
-                                "displayName": "sa-grucloud",
-                                "id": "105908581481869541232",
-                                "providerName": "google",
-                                "type": "ServiceAccount",
-                                "live": {
-                                    "name": "projects/grucloud-test/serviceAccounts/sa-grucloud@grucloud-test.iam.gserviceaccount.com",
-                                    "projectId": "grucloud-test",
-                                    "uniqueId": "105908581481869541232",
-                                    "email": "sa-grucloud@grucloud-test.iam.gserviceaccount.com",
-                                    "displayName": "sa-grucloud",
-                                    "etag": "MDEwMjE5MjA=",
-                                    "oauth2ClientId": "105908581481869541232",
-                                    "iamPolicy": {
-                                        "etag": "ACAB"
-                                    }
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": false,
-                                "namespace": "",
-                                "dependencies": [],
-                                "managedByUs": false,
-                                "show": true
-                            }
-                        ]
+                        "resources": []
                     },
                     {
                         "type": "VmInstance",
